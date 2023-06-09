@@ -74,13 +74,13 @@ body,
     background-color: red;
     /* height: 100px; */
     flex: 100 1 0;
-    max-width: 25rem;
+    max-width: 30rem;
 }
 .logoContainer{}
 .logo{}
 .mainContainer{
     background-color: blue;
-    width: 60rem;
+    width: 55rem;
 }
 .imageContainer{}
 .propositionContainer{}
