@@ -53,10 +53,35 @@ input:focus-visible {
     border: none;
 }
 /* #endregion */
-:root{}
-.imageContainer{}
+:root{
+}
+html,
+body,
+.page,
+.imageContainer,
+.mainContainer {
+    height: 100%;
+}
+.page{
+    display: flex;
+}
+.margin{
+    background-color: black;
+    width: 17rem;
+    flex: 1 100 0px;
+}
+.imageContainer{
+    background-color: red;
+    /* height: 100px; */
+    flex: 100 1 0;
+    max-width: 25rem;
+}
 .logoContainer{}
 .logo{}
+.mainContainer{
+    background-color: blue;
+    width: 60rem;
+}
 .imageContainer{}
 .propositionContainer{}
 .proposition{}
