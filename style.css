@@ -204,3 +204,12 @@ button {
 em {
     font-style: italic;
 }
+.linkContainer{
+    font: 1.2rem NotoSans;
+    padding: 2rem 0 0 3rem;
+}
+a {
+   text-decoration: none;
+    color:rgb(255, 113, 136);
+    font-weight: 900;
+}
