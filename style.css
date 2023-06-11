@@ -192,6 +192,15 @@ input {
     position: relative;
     z-index: 1;
 }
+button {
+    margin: 2rem 0 0 3rem;
+    padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+    background-color: pink;
+    font: 1.1rem NotoSans;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
 em {
     font-style: italic;
 }
