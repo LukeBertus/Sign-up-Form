@@ -185,6 +185,27 @@ input {
     height: 1.5rem;
     width: 17rem;
     margin-right: 3rem;
+    border-radius: 6px;
+    border-width: 1px;
+    
+}
+form input:placeholder-shown {
+    outline: 1px solid black;
+    border: none;
+}
+form input:focus {
+    height: 1.5rem;
+    width: 17.11rem;
+    border: 1px solid rgb(7, 85, 201);
+    box-shadow: 1px 1px 3px grey;
+    outline: none
+
+}
+input:invalid {
+    border: 1px solid rgb(156, 0, 0);
+}
+input:valid {
+    border: 1px solid rgb(0, 160, 27);
 }
 .submitContainer{
     height: auto;
@@ -201,6 +222,7 @@ button {
     border-radius: 10px;
     border: none;
     transition: all 0.3s;
+    cursor: pointer;
 }
 button:hover{
     background-color: black;

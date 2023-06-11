@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,37 +22,38 @@
                     <fieldset>
                         <div class="inputContainer">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <input type="text" id="firstName" name="firstName" placeholder=" " required>
                         </div>
                         <div class="inputContainer">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="lastName" name="lastName" placeholder=" ">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="inputContainer">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" placeholder=" " required>
                         </div>
                         <div class="inputContainer">
                             <label for="phoneNum">PHONE NUMBER</label>
-                            <input type="text" id="phoneNum" name="phoneNum">
+                            <input type="tel" id="phoneNum" name="phoneNum" pattern="[0-9]{10}" placeholder=" " required maxlength="10">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="inputContainer">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" placeholder=" " required>
                         </div>
                         <div class="inputContainer">
                             <label for="passwordConf">CONFIRM PASSWORD</label>
-                            <input type="password" id="passwordConf" name="passwordConf">
+                            <input type="password" id="passwordConf" name="passwordConf" placeholder=" " required>
                         </div>
                     </fieldset>
-                </form>
+                
             </div>
             <div class="submitContainer"></div>
             <button type="submit">Create Account</button>
+        </form>
             <div class="linkContainer">
                 <p>Already have an account? <a href="google.com">Log in</a></p>
             </div>
