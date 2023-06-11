@@ -23,11 +23,18 @@ window.addEventListener('resize', e => {
         imageContainer = document.createElement('div');
         imageContainer.classList.add("imageContainer");
         page.insertBefore(imageContainer, mainContainer);
-        image = document.createElement('img');
-        image.classList.add("image");
-        imageContainer.appendChild(image);
+        logo = document.createElement('img');
+        logo.classList.add("logo");
+        imageContainer.appendChild(logo);
+        
+        credit = document.createElement('p');
+        credit.classList.add("credit");
+        credit.textContent = "Photo by J Lee on Unsplash"
+        imageContainer.appendChild(credit);
+        logo.setAttribute('src', 'images/logo.png')
     }
 })
 const onLoad = new Event("resize");
 window.dispatchEvent(onLoad);
 //#endregion
+

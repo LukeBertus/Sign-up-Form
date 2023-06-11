@@ -53,6 +53,41 @@ input:focus-visible {
     border: none;
 }
 /* #endregion */
+
+/*#region fonts*/
+@font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-Medium.ttf) format('truetype'),
+         url(fonts/NotoSans-Bold.ttf) format('truetype'),
+         url(fonts/NotoSans-Italic.ttf) format('truetype'),
+         url(fonts/NotoSans-Black.ttf) format('truetype'),
+         url(fonts/NotoSans-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-Bold.ttf) format('truetype');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-Italic.ttf) format('truetype');
+    font-style: italic;
+  }
+  @font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-Black.ttf) format('truetype');
+    font-style: 900;
+  }
+  @font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-Light.ttf) format('truetype');
+    font-style: 300;
+  }
+/* #endregion */
+
 :root{
 }
 html,
@@ -68,23 +103,60 @@ body,
 .margin{
     background-color: black;
     width: 17rem;
-    flex: 1 100 0px;
+    flex: 1 10000 0px;
 }
 .imageContainer{
-    background-color: red;
-    /* height: 100px; */
-    flex: 100 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 10000 1 0;
     max-width: 30rem;
+    background-image: url(images/background.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 3;
 }
-.logoContainer{}
-.logo{}
+.logo{
+    height: 20rem;
+    width: 25rem;
+    margin-top: 4rem;
+}
+.credit{
+    font-family: NotoSans;
+    margin-bottom: 1rem;
+    color: rgb(32, 32, 32);
+}
 .mainContainer{
-    background-color: blue;
     width: 55rem;
 }
-.imageContainer{}
-.propositionContainer{}
-.proposition{}
-.formContainer{}
+
+.propositionContainer{
+    background-color: rgb(245, 245, 245);
+    height: 19rem;
+    position: relative;
+    z-index: 1;
+}
+.proposition{
+    font-family: NotoSans;
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 6rem 7rem 0 4rem;
+    line-height: 1.9rem;
+    max-height: 13rem;
+    overflow: hidden;
+}
+.formContainer{
+    height: 25rem;
+    box-shadow: 0 4px 10px rgb(177, 177, 177);
+    position: relative;
+    z-index: 2;
+}
 form{}
-.submitContainer{}
+.submitContainer{
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    z-index: 1;
+}
