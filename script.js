@@ -30,9 +30,33 @@ window.addEventListener('resize', e => {
         
         credit = document.createElement('p');
         credit.classList.add("credit");
-        credit.textContent = "Photo by J Lee on Unsplash"
         imageContainer.appendChild(credit);
-        logo.setAttribute('src', 'images/logo.png')
+
+        photoBy = document.createElement('span');
+        photoBy.textContent = "Photo by ";
+        photoBy.classList.add("creditText")
+        credit.appendChild(photoBy);
+
+        userCredit = document.createElement('a')
+        userCredit.setAttribute('href', 'https://unsplash.com/@babybluecat')
+        userCredit.textContent = "J Lee"
+        userCredit.classList.add("creditLink")
+        credit.appendChild(userCredit)
+        
+        on = document.createElement('span');
+        on.textContent = " on ";
+        on.classList.add("creditText")
+        credit.appendChild(on);
+
+        siteCredit = document.createElement('a')
+        siteCredit.setAttribute('href', 'https://unsplash.com')
+        siteCredit.textContent = "Unsplash"
+        siteCredit.classList.add("creditLink")
+        credit.appendChild(siteCredit)
+
+
+        
+        logo.setAttribute('src', 'images/logo3.png')
     }
 })
 const onLoad = new Event("resize");
