@@ -1,6 +1,7 @@
 //#region querySelectors
 const page = document.querySelector(".page")
 const mainContainer = document.querySelector('.mainContainer')
+const pass2 = document.querySelector('#passwordConf')
 //#endregion
 
 //#region layout
@@ -38,3 +39,11 @@ const onLoad = new Event("resize");
 window.dispatchEvent(onLoad);
 //#endregion
 
+// #region password comparison
+pass2.addEventListener('change', e => {
+let pass1Value = document.getElementById('password').value ;
+let pass2Value = pass2.value;
+    if (pass1Value !== pass2Value) pass2.setCustomValidity("The passwords do not match")
+    else pass2.setCustomValidity("")
+}); 
+// #endregion
