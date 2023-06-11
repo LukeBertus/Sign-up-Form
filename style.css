@@ -61,7 +61,8 @@ input:focus-visible {
          url(fonts/NotoSans-Bold.ttf) format('truetype'),
          url(fonts/NotoSans-Italic.ttf) format('truetype'),
          url(fonts/NotoSans-Black.ttf) format('truetype'),
-         url(fonts/NotoSans-Light.ttf) format('truetype');
+         url(fonts/NotoSans-Light.ttf) format('truetype'),
+         url(fonts/NotoSans-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -69,7 +70,7 @@ input:focus-visible {
   @font-face {
     font-family: NotoSans;
     src: url(fonts/NotoSans-Bold.ttf) format('truetype');
-    font-weight: bold;
+    font-weight: 700;
   }
   @font-face {
     font-family: NotoSans;
@@ -86,10 +87,14 @@ input:focus-visible {
     src: url(fonts/NotoSans-Light.ttf) format('truetype');
     font-style: 300;
   }
+  @font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-Regular.ttf) format('truetype');
+    font-style: 400;
+  }
 /* #endregion */
 
-:root{
-}
+
 html,
 body,
 .page,
@@ -148,12 +153,39 @@ body,
     overflow: hidden;
 }
 .formContainer{
-    height: 25rem;
+    height: 22rem;
     box-shadow: 0 4px 10px rgb(177, 177, 177);
     position: relative;
     z-index: 2;
 }
-form{}
+legend {
+    padding: 1rem 0 2rem 3rem;
+    font: 1.8rem NotoSans;
+    font-weight: 700;
+}
+label {
+    font: 0.7rem NotoSans;
+    font-weight: 700;
+    letter-spacing: 1.9px;
+    margin-bottom: 0.3rem;
+}
+form{
+    max-width: 45rem;
+}
+fieldset {
+    display: flex;
+   
+    margin: 0 0 1.8rem 3rem;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 1.5rem;
+    width: 17rem;
+    margin-right: 3rem;
+}
 .submitContainer{
     height: auto;
     background-color: rgb(245, 245, 245);
