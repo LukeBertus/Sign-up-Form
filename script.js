@@ -11,14 +11,14 @@ window.addEventListener('resize', e => {
     let pageWidth = page.offsetWidth
     console.log(tracker)
     
-    if (pageWidth < 1200 && tracker === 1) {
+    if (pageWidth < 1150 && tracker === 1) {
         if (imageContainer) {
         imageContainer.remove();
         imageContainer = null;
         }
         tracker = 0;
     } 
-    if (pageWidth>=1200 && tracker === 0) {
+    if (pageWidth>=1150 && tracker === 0) {
         tracker = 1;
         imageContainer = document.createElement('div');
         imageContainer.classList.add("imageContainer");

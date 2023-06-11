@@ -147,7 +147,7 @@ body,
     font-family: NotoSans;
     font-weight: bold;
     font-size: 1.4rem;
-    padding: 6rem 7rem 0 4rem;
+    padding: 6rem 7rem 0 3rem;
     line-height: 1.9rem;
     max-height: 13rem;
     overflow: hidden;
@@ -200,6 +200,11 @@ button {
     font-weight: bold;
     border-radius: 10px;
     border: none;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: black;
+    color: pink;
 }
 em {
     font-style: italic;
@@ -212,4 +217,8 @@ a {
    text-decoration: none;
     color:rgb(255, 113, 136);
     font-weight: 900;
+}
+
+a:hover {
+    text-decoration: underline
 }
