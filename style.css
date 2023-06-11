@@ -140,8 +140,8 @@ body,
 }
 .proposition{
     font-family: NotoSans;
-    font-weight: 900;
-    font-size: 1.6rem;
+    font-weight: bold;
+    font-size: 1.4rem;
     padding: 6rem 7rem 0 4rem;
     line-height: 1.9rem;
     max-height: 13rem;
@@ -155,8 +155,11 @@ body,
 }
 form{}
 .submitContainer{
-    height: 100%;
+    height: auto;
     background-color: rgb(245, 245, 245);
     position: relative;
     z-index: 1;
+}
+em {
+    font-style: italic;
 }
