@@ -186,8 +186,9 @@ input {
     width: 17rem;
     margin-right: 3rem;
     border-radius: 6px;
-    border-width: 1px;
-    
+    border-width: 1px; 
+    /* covers default behaviour of blue background after using autofill */
+    box-shadow: 0 0 0px 1000px white inset !important; 
 }
 form input:placeholder-shown {
     outline: 1px solid black;
